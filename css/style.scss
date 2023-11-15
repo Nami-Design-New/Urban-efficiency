@@ -337,6 +337,9 @@ header {
         &:hover {
           &::after {
             width: 80%;
+            @media (max-width: 576px) {
+              width: 100%;
+            }
           }
         }
       }
@@ -391,6 +394,10 @@ header {
       font-size: 46px;
       line-height: 58px;
       margin-top: 70px;
+      @media (max-width: 576px) {
+        font-size: 30px;
+        line-height: 48px;
+      }
       span {
         display: inline-flex;
         flex-direction: column;
@@ -464,6 +471,9 @@ header {
   //   background-image: url(../img/icons/line.svg);
   //   background-repeat: repeat-x;
   // }
+  @media (max-width: 576px) {
+    font-size: 28px;
+  }
 }
 .aboutPage {
   padding: 64px 0;
@@ -885,7 +895,7 @@ footer {
         justify-content: center;
         align-items: start;
         gap: 4px;
-        min-width: 150px;
+        min-width: 200px;
         background-color: #eee;
         @media (max-width: 1200px) {
           flex: 1;

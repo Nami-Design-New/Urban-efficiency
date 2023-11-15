@@ -362,6 +362,11 @@ header .navbar .navbar-nav .nav-link::after {
 header .navbar .navbar-nav .nav-link.active::after, header .navbar .navbar-nav .nav-link:hover::after {
   width: 80%;
 }
+@media (max-width: 576px) {
+  header .navbar .navbar-nav .nav-link.active::after, header .navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+  }
+}
 
 .hearoSection {
   position: sticky;
@@ -414,6 +419,12 @@ header .navbar .navbar-nav .nav-link.active::after, header .navbar .navbar-nav .
   font-size: 46px;
   line-height: 58px;
   margin-top: 70px;
+}
+@media (max-width: 576px) {
+  .hearoSection .inner .title {
+    font-size: 30px;
+    line-height: 48px;
+  }
 }
 .hearoSection .inner .title span {
   display: inline-flex;
@@ -473,6 +484,11 @@ header .navbar .navbar-nav .nav-link.active::after, header .navbar .navbar-nav .
   line-height: 1.6;
   width: -moz-fit-content;
   width: fit-content;
+}
+@media (max-width: 576px) {
+  .aboutTitle {
+    font-size: 28px;
+  }
 }
 
 .aboutPage {
@@ -920,7 +936,7 @@ footer .border-top {
   justify-content: center;
   align-items: start;
   gap: 4px;
-  min-width: 150px;
+  min-width: 200px;
   background-color: #eee;
 }
 @media (max-width: 1200px) {
